@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c5fd9-d601-474a-a307-42c4c66e64e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/village.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language/evaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language/lexer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logic/controllers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/village.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/village.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,34 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.village">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/language" />
+      <recent name="$PROJECT_DIR$/logic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="lexer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InterpreterGame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/language/lexer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InterpreterGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,6 +89,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InterpreterGame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/language/parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="village" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InterpreterGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,7 +122,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/village.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logic/village.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,8 +133,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.village" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.parser" />
+        <item itemvalue="Python.lexer" />
+        <item itemvalue="Python.village" />
       </list>
     </recent_temporary>
   </component>
@@ -97,21 +154,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1488" height="259" key="GridCell.Tab.0.bottom" timestamp="1637826790070">
+    <state width="1488" height="259" key="GridCell.Tab.0.bottom" timestamp="1637849729559">
       <screen x="0" y="25" width="1680" height="962" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.bottom/0.25.1680.962@0.25.1680.962" timestamp="1637826790070" />
-    <state width="1488" height="259" key="GridCell.Tab.0.center" timestamp="1637826790068">
+    <state width="1488" height="259" key="GridCell.Tab.0.bottom/0.25.1680.960@0.25.1680.960" timestamp="1637847400691" />
+    <state width="1488" height="259" key="GridCell.Tab.0.bottom/0.25.1680.962@0.25.1680.962" timestamp="1637849729559" />
+    <state width="1488" height="259" key="GridCell.Tab.0.center" timestamp="1637849729558">
       <screen x="0" y="25" width="1680" height="962" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.center/0.25.1680.962@0.25.1680.962" timestamp="1637826790068" />
-    <state width="1488" height="259" key="GridCell.Tab.0.left" timestamp="1637826790068">
+    <state width="1488" height="259" key="GridCell.Tab.0.center/0.25.1680.960@0.25.1680.960" timestamp="1637847400690" />
+    <state width="1488" height="259" key="GridCell.Tab.0.center/0.25.1680.962@0.25.1680.962" timestamp="1637849729558" />
+    <state width="1488" height="259" key="GridCell.Tab.0.left" timestamp="1637849729558">
       <screen x="0" y="25" width="1680" height="962" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.left/0.25.1680.962@0.25.1680.962" timestamp="1637826790068" />
-    <state width="1488" height="259" key="GridCell.Tab.0.right" timestamp="1637826790069">
+    <state width="1488" height="259" key="GridCell.Tab.0.left/0.25.1680.960@0.25.1680.960" timestamp="1637847400690" />
+    <state width="1488" height="259" key="GridCell.Tab.0.left/0.25.1680.962@0.25.1680.962" timestamp="1637849729558" />
+    <state width="1488" height="259" key="GridCell.Tab.0.right" timestamp="1637849729559">
       <screen x="0" y="25" width="1680" height="962" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.right/0.25.1680.962@0.25.1680.962" timestamp="1637826790069" />
+    <state width="1488" height="259" key="GridCell.Tab.0.right/0.25.1680.960@0.25.1680.960" timestamp="1637847400691" />
+    <state width="1488" height="259" key="GridCell.Tab.0.right/0.25.1680.962@0.25.1680.962" timestamp="1637849729559" />
+    <state x="534" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1637847603540">
+      <screen x="0" y="25" width="1680" height="962" />
+    </state>
+    <state x="534" y="233" width="670" height="676" key="search.everywhere.popup/0.25.1680.962@0.25.1680.962" timestamp="1637847603540" />
   </component>
 </project>
